@@ -1,0 +1,21 @@
+<configuration>
+    <!-- Disable TestNG logs -->
+    <logger name="org.testng" level="OFF"/>
+
+    <!-- Disable WebDriverManager logs -->
+    <logger name="io.github.bonigarcia.wdm" level="OFF"/>
+
+    <!-- Reduce Selenium logs -->
+    <logger name="org.openqa.selenium" level="ERROR"/>
+
+    <!-- Root -->
+    <root level="ERROR">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+    </appender>
+</configuration>
